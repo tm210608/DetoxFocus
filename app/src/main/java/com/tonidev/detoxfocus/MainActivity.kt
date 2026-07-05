@@ -18,13 +18,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            DetoxFocusApp()
+            DetoxFocusContent()
         }
     }
 }
 
 @Composable
-private fun DetoxFocusApp() {
+private fun DetoxFocusContent() {
     DetoxFocusTheme {
         Surface(modifier = Modifier.fillMaxSize()) {
             // Punto de entrada temporal: de momento solo el dashboard.
